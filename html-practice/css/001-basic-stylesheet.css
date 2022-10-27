@@ -1,0 +1,24 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font: status-bar;
+    font-size: 15px;
+  }
+  
+  .dark-mode {
+    background-color: grey;
+    color: white;
+  }
+
+footer {
+    background-color: black;
+    font: status-bar;
+    color: white;
+}
+
+nav {
+    background-color: aqua;
+    font-size: 20px;
+    font: status-bar;
+}
