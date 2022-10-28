@@ -6,15 +6,18 @@ body {
     font-size: 15px;
   }
   
-  .dark-mode {
+/* Class mode. Create a separate class with the ( . ) symbol.
+When one creates a class, the style of it can be applied to different elements. */
+.dark-mode {
     background-color: grey;
-    color: white;
-  }
+    color: black
+}
 
 footer {
-    background-color: black;
+    background-color: aqua;
     font: status-bar;
     color: white;
+    text-indent: left;
 }
 
 nav {
@@ -31,7 +34,7 @@ table, td, tr{
 p{
     font: status-bar;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     color: grey;
 }
@@ -43,4 +46,14 @@ img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
+}
+
+
+/*
+Unlike a class, an ID is begun with #. It is used to format a specific entity
+In this case, I just want to update the size of the image on the pre-history page.
+*/
+#prehistory-image{
+    height: 15%;
+    width: 15%;
 }
