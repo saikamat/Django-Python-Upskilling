@@ -22,3 +22,23 @@ nav {
     font-size: 20px;
     font: status-bar;
 }
+
+table, td, tr{
+    background-color: beige;
+    border: 3px solid green;
+}
+
+div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
