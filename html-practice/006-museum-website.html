@@ -17,23 +17,37 @@
     </nav>
     <br>
     <img src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2V1bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=300&q=60" alt="No Image">
-    <br>
-    <p>Our mission is to discover and describe life and earth – with people, through dialogue. We want to engage with and influence the scientific and societal discourse about the future of our planet, worldwide.</p>
-    <h2><a href="">Sitemap</a></h2>
-    <ul>
-        <li><a href="http://localhost:8080/html-practice/006-museum-website.html">Home Page</a></li>
-        <li>Exhibits</li>
+    <!-- 
+        Adding a new span. Super specific modifications 
+    -->
+    <p>Our <span id="mission-id">mission</span> is to discover and describe life and earth – with people, through dialogue. We want to engage with and influence the scientific and societal discourse about the future of our planet, worldwide.</p>
+    
+    <!-- 
+        New Division 
+    -->
+    <div class="home-page-sitemap"></div>
+        <h2><a href="">Sitemap</a></h2>
         <ul>
-            <li><a href="0061-geology-exhibit.html">Geology</a></li>
-            <li><a href="0062-Prehistory-page.html">Prehistory</a></li>
-            <li><a href="0065-taxidermy.html">Taxidermy</a></li>
+            <li><a href="http://localhost:8080/html-practice/006-museum-website.html">Home Page</a></li>
+            <li>Exhibits</li>
+            <ul>
+                <li><a href="0061-geology-exhibit.html">Geology</a></li>
+                <li><a href="0062-Prehistory-page.html">Prehistory</a></li>
+                <li><a href="0065-taxidermy.html">Taxidermy</a></li>
+            </ul>
+            <li><a href="0063-contact-us.html">Contact Us</a></li>
+            <button type="button" onclick="myFunction()">Toggle Dark/Light Mode</button>
         </ul>
-        <li><a href="0063-contact-us.html">Contact Us</a></li>
-        <button type="button" onclick="myFunction()">Toggle Dark/Light Mode</button>
-    </ul>
-    <footer>
-        <p>Author: Sai Kamat</p>
-        <p><a href="mailto:sai@kamat.in">sai@kamat.in</a></p>
-    </footer> 
+    </div>
+
+    <!-- 
+       Another Division 
+    -->
+    <div class="footer-specs">
+        <footer>
+            <p>Author: Sai Kamat</p>
+            <p><a href="mailto:sai@kamat.in">sai@kamat.in</a></p>
+        </footer>
+    </div>  
 </body>
 </html>

@@ -1,25 +1,3 @@
-body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font: status-bar;
-    font-size: 15px;
-  }
-  
-/* Class mode. Create a separate class with the ( . ) symbol.
-When one creates a class, the style of it can be applied to different elements. */
-.dark-mode {
-    background-color: grey;
-    color: black
-}
-
-footer {
-    background-color: aqua;
-    font: status-bar;
-    color: white;
-    text-indent: left;
-}
-
 nav {
     background-color: aqua;
     font-size: 20px;
@@ -48,6 +26,26 @@ img {
     padding: 5px;
 }
 
+/* Class mode. Create a separate class with the ( . ) symbol.
+When one creates a class, the style of it can be applied to different elements. */
+.dark-mode {
+    background-color: grey;
+    color: white
+}
+
+.home-page-sitemap {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font: status-bar;
+    font-size: 15px;
+}
+
+.footer-specs{
+    background-color: lightgray;
+    text-transform: lowercase;
+}
+
 
 /*
 Unlike a class, an ID is begun with #. It is used to format a specific entity
@@ -57,3 +55,9 @@ In this case, I just want to update the size of the image on the pre-history pag
     height: 15%;
     width: 15%;
 }
+
+#mission-id{
+    background-color: black;
+    color: white;
+}
+
