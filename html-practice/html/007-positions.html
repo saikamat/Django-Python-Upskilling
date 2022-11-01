@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/002-positions.css">
+</head>
+<body>
+    <h1>Positions</h1>
+    <p>Static, Relative & Fixed</p>
+
+    <!--static class-->
+    <div id="static-class">
+        <p>This is <span class="bold-string">static</span> class. Not positioned in any special way.</p>
+    </div>
+    <br>
+
+    <!--relative class-->
+    <div id="relative-class">
+        <p>This is <span class="bold-string">relative</span> class. Positioning depends on nearest element. It's now moved because its 50px away from the entity above it</p>
+    </div>
+    <br>
+
+    <!--fixed class-->
+    <div id="fixed-class">
+        <p>This is <span class="bold-string">fixed</span> class. Elements of this class will stay rooted,
+             no matter how much you scroll. It's positioned relative to the browser window</p>
+    </div>
+
+    <!--absolute class-->
+    <div id="absolute-class">
+        <p>This is <span class="bold-string">absolute</span> class. It's positioned relative to its first positioned (not static) ancestor element</p>
+    </div>
+</body>
+</html>

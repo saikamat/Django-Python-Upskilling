@@ -1,0 +1,45 @@
+#static-class{
+    font: status-bar;
+    border: 3px solid gray;
+    position: static;
+    /* width: 200px; */
+    height: 200px;
+}
+
+h1{
+    font: status-bar;
+    color: crimson;
+    font-size: 20px;
+}
+
+#relative-class{
+    font: status-bar;
+    border: 3px solid orange;
+    position: relative;
+    width: 200px;
+    top: 50px;
+    left: 100px
+}
+
+#fixed-class{
+    font: status-bar;
+    border: 3px solid black;
+    position: fixed;
+    width: 200px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#absolute-class{
+    font: status-bar;
+    border: 3px solid blue;
+    position: absolute;
+    width: 200px;
+    right: 50px;
+    top: 100px
+}
+
+.bold-string{
+    text-transform: uppercase;
+    font-weight: bold;
+}
