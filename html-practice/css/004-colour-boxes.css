@@ -1,0 +1,30 @@
+h1{
+    font: status-bar;
+    /* color: red; */
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+#first-step-box{
+    background-color: blue;
+    height: 20px;
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
+#second-step-box{
+    background-color: purple;
+    height: 40px;
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+
+#third-step-box{
+    background-color: green;
+    height: 80px;
+    width: 200px;
+    position: relative;
+    left: 200px;
+}
