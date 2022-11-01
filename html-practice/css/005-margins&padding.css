@@ -1,0 +1,47 @@
+#content-box{
+    background-color: skyblue;
+    font: status-bar;
+    border: 3px solid black;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    margin: 15%;
+}
+
+#padding-box{
+    background-color: green;
+    font: status-bar;
+    border: 3px solid black;
+    width: 140px;
+    height: 100px;
+    padding: 5px;
+    text-align: left;
+    margin: 15%;
+    position: relative;
+}
+
+#border-box{
+    background-color: yellow;
+    font: status-bar;
+    border: 3px solid black;
+    width: 210px;
+    height: 200px;
+    padding: 5px;
+    text-align: left;
+    color: black;
+    margin: 15%;
+    /* position: absolute; */
+}
+
+#margin-box{
+    background-color:brown;
+    font: status-bar;
+    color: white;
+    border: 3px dotted black;
+    width: 280px;
+    height: 300px;
+    padding: 5px;
+    text-align: left;
+    /* position: absolute; */
+}
