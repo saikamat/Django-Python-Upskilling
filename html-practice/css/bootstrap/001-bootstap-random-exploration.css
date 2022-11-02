@@ -1,0 +1,9 @@
+.bold-string{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carousel-item active{
+    height: 50%;
+    width: 50%;
+}
