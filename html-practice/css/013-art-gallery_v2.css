@@ -1,0 +1,64 @@
+h1{
+    border: 5px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+    background-color: antiquewhite;
+    padding-left: 100px;
+    height: 100px;
+}
+
+#exhibition-wall{
+    border: 5px solid darkmagenta;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+/* paintings is a class and is used often. therefore use . */
+.paintings{
+    border: 5px solid chocolate;
+    border-radius: 20px;
+    height: 10%;
+    width: 20%;
+    filter: grayscale(100%);
+} 
+
+.titles > p{
+    float: left;
+    padding-left: 100px;
+    padding-right: 120px;
+    display: none;
+}
+
+/* .titles{
+    display: none;
+} */
+
+.paintings:hover{
+    filter:none;
+}
+
+.paintings:hover .titles{
+    display: block;
+}
+
+#blue-box{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#visit-shop{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: beige;
+}
