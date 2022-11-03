@@ -1,0 +1,37 @@
+.container-fluid{
+    background-image: url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-size: cover;
+    color:white;
+    border: 3px solid black;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: none;
+    flex-basis: auto;
+  }
+
+.nav-link{
+    color: white;
+}
+
+.navbar-expand{
+    background-image: none;
+}
+
+.card{
+    background-color: aqua;
+    border: 3px solid black;
+    padding-left: 10px;
+    margin-left: 4px;
+    margin-right: 4px
+}
+
+.pagination{
+    position: relative;
+    padding-top: 20px;
+    padding-inline: 40%;
+}
