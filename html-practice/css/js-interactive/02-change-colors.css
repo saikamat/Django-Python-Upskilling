@@ -1,0 +1,41 @@
+#Block-1{
+    border: 3px solid black;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    font:status-bar;
+    font-size: large;
+    text-align: center;
+    padding-top: 30px;
+    float: left;
+    margin: 50px;
+    background-color: green;
+}
+
+#Block-2{
+    border: 3px solid black;
+    position: relative;
+    top: 50px;
+    height: 150px;
+    width: 100px;
+    font: status-bar;
+    font-size: large;
+    text-align: center;
+    float:left;
+    left: 200px;
+    background-color: orange;
+}
+
+#Reset {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
