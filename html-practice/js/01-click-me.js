@@ -1,3 +1,8 @@
-function clickme(){
-    alert('Hello World!')
+function clickMe(){
+    alert('Hello World!');
+}
+
+function dateMe(){
+    alert(Date());
+    alert('Hurray!')
 }
