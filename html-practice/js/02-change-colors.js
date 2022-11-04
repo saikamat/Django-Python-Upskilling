@@ -9,8 +9,3 @@ function orangeClick(){
     document.getElementById('Block-2').innerHTML = "So make it fiery!"
     document.body.style.backgroundColor="orange";
 }
-
-function reset(){
-    // alert("Reset!");
-    document.body.style.backgroundColor="white";
-}
