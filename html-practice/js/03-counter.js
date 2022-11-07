@@ -1,12 +1,12 @@
 var num=0;
 
-function increment(num){
+function increment(){
     num=num+1;
     // alert(num)
     document.getElementById('value').innerHTML=num;
 }
 
-function decrement(num){
+function decrement(){
     num=num-1;
     // alert(num)
     document.getElementById('value').innerHTML=num;
