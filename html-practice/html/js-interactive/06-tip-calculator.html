@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/js-interactive/06-tip-calculator.css">
+</head>
+<body>
+    <div class="container-sm">
+        <form class="row g-lg-3 needs-validation" novalidate>
+            <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Bill Amount</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">€</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            </div>        
+            <label for="people-count" class="form-label">No. of People</label>
+            <input type="range" class="form-range" min="1" max="10" step="1" id="people-count">
+            <label for="tip-percentage" class="form-label">Tip Percentage</label>
+            <input type="range" class="form-range" min="0" max="100" step="10" id="tip-percentage">
+            <div class="col-12">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" onclick="tipCalculate()">Calculate</button>
+            </div>
+        </form>
+        <p id="tip-calculation-message"></p>
+        <p id="tip-calculation-output"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/06-tip-calculator.js"></script>
+</body>
+</html>
