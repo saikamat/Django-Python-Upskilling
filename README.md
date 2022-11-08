@@ -1,4 +1,4 @@
 # Django-Python-Upskilling
 
 
-![](html-practice/images/museum-home-page.jpg)
+![](html-practice/images/tip-calculator.JPG)
