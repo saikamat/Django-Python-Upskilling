@@ -1,4 +1,8 @@
 # %%
+import requests
+from datetime import datetime
+
+# %%
 def getCurrentTime():
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
