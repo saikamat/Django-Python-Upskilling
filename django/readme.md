@@ -1,7 +1,12 @@
-venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project> cd .\first_project\
-(venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project\first_project> ls
+### Open Folder
 
-    Directory: E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project\first_project
+```
+(venv)E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project> cd .\first_project\
+(venv)E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project\first_project> ls
+Directory: E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project\first_project
+
+
+
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
@@ -12,6 +17,15 @@ Mode                 LastWriteTime         Length Name
 -a---          14-11-2022    14:33            419 wsgi.py
 
 (venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project\first_project> cd ../
+```
+
+### Run commmand
+```
+python manage.py runserver
+```
+This will setup a server on your own computer. You can then access the wesbite from `127.0.0.1`
+
+```
 (venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project> python manage.py runserver       
 Watching for file changes with StatReloader
 Performing system checks...
@@ -32,3 +46,4 @@ Quit the server with CTRL-BREAK.
 Not Found: /favicon.ico
 [14/Nov/2022 14:35:17] "GET /favicon.ico HTTP/1.1" 404 2117
 (venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\first_project> 
+```
