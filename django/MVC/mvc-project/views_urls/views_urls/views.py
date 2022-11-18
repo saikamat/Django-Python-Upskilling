@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse('This is my first working page!\nHurray!')
+    return render(request, 'index.html')
