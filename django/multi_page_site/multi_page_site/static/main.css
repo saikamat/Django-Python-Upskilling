@@ -2,3 +2,9 @@ body{
     background-color: burlywood;
     font: status-bar;
 }
+
+#money-image{
+    border: 4px solid black;
+    height: 400px;
+    display: none;
+}
