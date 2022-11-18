@@ -8,3 +8,11 @@ body{
     height: 400px;
     display: none;
 }
+
+button{
+    font-size: large;
+}
+
+a:link {
+    text-decoration: none;
+}
