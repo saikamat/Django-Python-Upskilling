@@ -26,7 +26,7 @@ urlpatterns = [
 
 ### Integrating HTML into Django
 
-1. Create a directory say `templates` in a sibling folder to `views_urls`
+1. Create a directory say `templates` in a sibling folder to `views_urls`. Add an `index.html` file to it containing some sample html code.
 
 2. In the `views_urls/settings.py`, find the section called `TEMPLATES`. 
 
