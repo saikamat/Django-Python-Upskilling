@@ -4,4 +4,5 @@ def home(request):
     return render(request, 'index.html')
 
 def results(request):
-    return render(request, 'results.html')
+    user_input_age = request.GET["age"]
+    return render(request, 'results.html', {'age': user_input_age})
