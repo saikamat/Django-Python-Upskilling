@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1>Working</h1>
-    <a href="{% url 'results' %}">Click for results</a>
+    <!-- <a href="{% url 'results' %}">Click for results</a> -->
+    <p>Enter details of a passenger aboard the Ship.</p>
+    <p>We shall let you know whether he/she/they made it. I know, it is dark.</p>
+
+    <form action="{% url 'results' %}">
+        <input type="text", name="age">
+        <input type="submit">
+    </form>
+
 </body>
 </html>
