@@ -1,10 +1,19 @@
 from django.shortcuts import render
-from . import fake_model
+from . import titanic_ml_model_function
 
 def home(request):
     return render(request, 'index.html')
 
 def results(request):
-    user_input_age = int(request.GET["age"])
-    age_predictor = fake_model.fake_predict(user_input_age)
-    return render(request, 'results.html', {'age_prediction': age_predictor})
+    pclass = int(request.GET["pclass"])
+    sex = int(request.GET["sex"])
+    age = int(request.GET["age"])
+    sibsp = int(request.GET["sibsp"])
+    parch = int(request.GET["parch"])
+    fare = int(request.GET["fare"])
+    embarked = int(request.GET["embarked"])
+    title = int(request.GET["title"])
+
+    prediction = titanic_ml_model_function.prediction_model(pclass, sex, age, sibsp, parch, fare, embarked, title)
+    return render(request, 'results.html', {'prediction': prediction})
+    

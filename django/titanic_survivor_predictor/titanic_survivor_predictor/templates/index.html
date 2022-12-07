@@ -7,13 +7,29 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1>Working</h1>
+    <h1>Passenger Details</h1>
     <!-- <a href="{% url 'results' %}">Click for results</a> -->
     <p>Enter details of a passenger aboard the Ship.</p>
     <p>We shall let you know whether he/she/they made it. I know, it is dark.</p>
 
     <form action="{% url 'results' %}">
+        <p>Passenger Class (0, 1 or 2)</p>
+        <input type="text" name="pclass">
+        <p>Sex(0 (male) or 1(female))</p>
+        <input type="text" name="sex">
+        <p>Age (0 to 99)</p>
         <input type="text", name="age">
+        <p>Sibsp (0, 1 or 2)</p>
+        <input type="text" name="sibsp">
+        <p>Parent or Children(0 or 1)</p>
+        <input type="text" name="parch">
+        <p>Fare(0 to 100 USD)</p>
+        <input type="text" name="fare">
+        <p>Embarked(0 or 1)</p>
+        <input type="text" name="embarked">
+        <p>Title(0 to 7)</p>
+        <input type="text" name="title">
+
         <input type="submit">
     </form>
 
