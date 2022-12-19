@@ -1,0 +1,118 @@
+(venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\task_management> python manage.py makemigrations
+Migrations for 'task_management_app':
+  task_management_app\migrations\0001_initial.py
+    - Create model TaskDb
+(venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\task_management> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, task_management_app
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+  Applying task_management_app.0001_initial... OK
+(venv) PS E:\Full-Stack-Django-Python-JS-HTML-ML\django\task_management> python manage.py shell
+Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 16:30:00) [MSC v.1900 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: 
+
+In [1]: 
+
+In [1]: 
+
+In [1]: from task_management_app.models import TaskDb
+
+In [2]: TaskDb
+Out[2]: task_management_app.models.TaskDb
+
+In [3]: TaskDb.objects.all()
+Out[3]: <QuerySet []>
+
+In [4]: first_entry = TaskDb(task="Clean Shoes")
+
+In [5]: entry.save()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-5-15b7dafc7528> in <module>
+----> 1 entry.save()
+
+NameError: name 'entry' is not defined
+
+In [6]: first_entry.save()
+
+In [7]: TaskDb.objects.all()
+Out[7]: <QuerySet [<TaskDb: Clean Shoes False>]>
+
+In [8]: another_entry = TaskDb(task="Catch a bus")
+
+In [9]: another_entry.save()
+
+In [10]: TaskDb.objects.all()
+Out[10]: <QuerySet [<TaskDb: Clean Shoes False>, <TaskDb: Catch a bus False>]>
+
+In [11]: all = TaskDb.objects.all()
+
+In [12]: all
+Out[12]: <QuerySet [<TaskDb: Clean Shoes False>, <TaskDb: Catch a bus False>]>
+
+In [13]: all.first()
+Out[13]: <TaskDb: Clean Shoes False>
+
+In [14]: all.second()
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-14-e73548265a79> in <module>
+----> 1 all.second()
+
+AttributeError: 'QuerySet' object has no attribute 'second'
+
+In [15]: all.last()
+Out[15]: <TaskDb: Catch a bus False>
+
+In [16]: all[0]
+Out[16]: <TaskDb: Clean Shoes False>
+
+In [17]: all[1]
+Out[17]: <TaskDb: Catch a bus False>
+
+In [18]: all[1].delete()
+Out[18]: (1, {'task_management_app.TaskDb': 1})
+
+In [19]: all
+Out[19]: <QuerySet [<TaskDb: Clean Shoes False>]>
+
+In [20]: all.get(id=0)
+---------------------------------------------------------------------------
+DoesNotExist                              Traceback (most recent call last)
+<ipython-input-20-c153798bfbff> in <module>
+----> 1 all.get(id=0)
+
+E:\venv\lib\site-packages\django\db\models\query.py in get(self, *args, **kwargs)
+    435             raise self.model.DoesNotExist(
+    436                 "%s matching query does not exist." %
+--> 437                 self.model._meta.object_name
+    438             )
+    439         raise self.model.MultipleObjectsReturned(
+
+DoesNotExist: TaskDb matching query does not exist.
+
+In [21]: all.get(id=1)
+Out[21]: <TaskDb: Clean Shoes False>
+
+## change log
