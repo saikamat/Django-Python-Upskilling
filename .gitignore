@@ -44,5 +44,5 @@ __pycache__/
 
 
 # Django stuff:
-*.log
+# *.log
 *.pot
