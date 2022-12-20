@@ -7,6 +7,9 @@
     <title>Working Directory</title>
 </head>
 <body>
-    <h1>Working HTML Page</h1>
+    <h1>Task Items</h1>
+    {% for task in all_items %}
+        <p>{{task}}</p>
+    {% endfor %}
 </body>
 </html>
