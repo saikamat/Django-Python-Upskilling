@@ -11,5 +11,17 @@
     {% for task in all_items %}
         <p>{{task}}</p>
     {% endfor %}
+
+    <form action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="task" placeholder="Enter Task Name..."><br>
+        <input type="text" name="priority" placeholder="Enter Priority"><br>
+        <input type="submit" value="Submit"><br>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+        {% endif %}
+    </form>
 </body>
 </html>
