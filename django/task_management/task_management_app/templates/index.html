@@ -9,7 +9,7 @@
 <body>
     <h1>Task Items</h1>
     {% for task in all_items %}
-        <p>{{task}}</p>
+        <p>{{task}}</p><a href="{% url 'delete' task.id %}">Delete this entry</a>
     {% endfor %}
 
     <form action="{% url 'home' %}" method="post">

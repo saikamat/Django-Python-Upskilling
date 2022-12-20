@@ -21,3 +21,9 @@ def home(request):
     else:
         all_items = TaskDb.objects.all()
         return render(request, 'index.html', {'all_items':all_items})
+
+def delete(request, list_id):
+    item = TaskDb.objects.get(pk=list_id)
+    item.delete()
+    messages.success(request, ('Item deleted.'))
+    return redirect('home')
